@@ -1,5 +1,6 @@
 package com.codewithmurray;
 
+import java.awt.*;
 import java.util.Date;
 
 public class Main {
@@ -28,9 +29,18 @@ public class Main {
 
         // Reference Types - for storing complex objects
 
-        byte driverAge = 22;
+//        byte driverAge = 22;
         // The new Date() is referencing the instances of the Date class
-        Date now = new Date();
-        System.out.println(now);
+//        Date now = new Date();
+//        System.out.println(now);
+
+        // Primitive vs Reference Types
+
+        Point point1 = new Point(2,1);
+        Point point2 = point1;
+        point1.x = 1;
+        System.out.println(point2);
+        // Note: Reference Types are copied by the references
+        // Primitive Types are copied by their values and these values are independent of each other.
     }
 }
